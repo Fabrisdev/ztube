@@ -1,0 +1,66 @@
+#submitForm{
+    border: 0.25em solid rgb(21, 187, 95);
+    border-radius: 0.5em; 
+    background: #3CBC8D;
+    box-shadow: 3px 3px black;
+    font-size: 1.7em;
+    display: inline-block;
+    font-family: 'Andika New Basic', sans-serif;
+    transition: transform .2s;
+    padding-bottom: 10px;
+    
+}
+#submitForm:hover{
+    border: 0.3rem solid rgb(9, 110, 54);
+    background: #2ba176;
+    transform: scale(1.2);
+}
+#link{
+    display: inline-block;
+    margin: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 1em;
+    width: 60%;
+    background-color: #3CBC8D;
+    border: 0.5em solid rgb(26, 182, 96);
+    border-radius: 0.8em;
+    color: white;
+    box-shadow: 3px 3px black;
+    transition: transform .2s;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#link:focus{
+    outline: 0;
+}
+#submitForm:focus{
+    outline: 0;
+}
+#link:hover{
+    transform: scale(1.05);
+}
+::placeholder { /* Most modern browsers support this now. */
+    color: white;
+ }
+#buttonDownload{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+#status{
+    display: inline-block;
+    font-family: 'Andika New Basic', sans-serif;
+    border: 0.3em solid rgb(255, 208, 0);
+    border-radius: 0.5em;
+    background: rgb(255, 208, 0);
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    transition: transform .2s;
+}
+#status:hover{
+    transform: scale(1.1);
+    background: rgb(255, 196, 0);
+    border: 0.3em solid rgb(255, 196, 0);
+}
