@@ -1,8 +1,16 @@
 #video{
-    display: block;
-    padding-left: 470px;
+    border: 2px solid red;
 }
 #videoPlayer{
-    border: 2px solid black;
-    margin-bottom: 2.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid red;
+    margin-bottom: 15em;
 }
+@media only screen and (max-width: 451px) {
+    #videoPlayer{
+        width: 100%;
+    }
+  }
