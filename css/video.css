@@ -1,13 +1,11 @@
-#video{
-    border: 2px solid red;
-}
+
 #videoPlayer{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     border: 2px solid red;
-    margin-bottom: 15em;
+    margin-bottom: 4em;
 }
 @media only screen and (max-width: 451px) {
     #videoPlayer{
