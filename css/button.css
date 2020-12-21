@@ -14,6 +14,7 @@
     -moz-user-select:none;      /* Firefox */
     -ms-user-select:none;       /* Internet Explorer/Edge */
     user-select:none;           /* Non-prefixed version */ 
+    width: 100%;
     
 }
 #submitForm:hover{
@@ -27,16 +28,13 @@
     padding: 12px 20px;
     box-sizing: border-box;
     font-size: 1em;
-    width: 60%;
+    width: 100%;
     background-color: #3CBC8D;
     border: 0.5em solid rgb(26, 182, 96);
     border-radius: 0.8em;
     color: white;
     box-shadow: 3px 3px black;
     transition: transform .2s;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 #link:focus{
     outline: 0;
@@ -45,6 +43,8 @@
     outline: 0;
 }
 #link:hover{
+    border: 0.3rem solid rgb(9, 110, 54);
+    background: #2ba176;
     transform: scale(1.05);
 }
 ::placeholder { /* Most modern browsers support this now. */
@@ -52,6 +52,40 @@
  }
 #buttonDownload{
     margin: auto;
-    width: 60%;
+    width: 50%;
     padding: 10px;
+}
+@media only screen and (max-width: 900px) {
+    #link{
+        width: 100%;
+        margin-left: 0;
+    }
+    #buttonDownload{
+        width: 100%;
+        padding: 0;
+    }
+    #submitForm{
+        width: 420%;
+    }
+    #link:hover{
+        border: 0.5em solid rgb(26, 182, 96);
+        background-color: #3CBC8D;
+        transform: scale(1);
+    }
+    .bg_description{
+        font-size: 2.3em;
+    }
+    .bg_description:hover{
+        transform: scale(1);
+    }
+    .title:hover{
+        transform: scale(1);
+    }
+
+}
+#buttonClick{
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 3px;
 }
