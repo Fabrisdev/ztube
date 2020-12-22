@@ -14,14 +14,20 @@
     -moz-user-select:none;      /* Firefox */
     -ms-user-select:none;       /* Internet Explorer/Edge */
     user-select:none;           /* Non-prefixed version */ 
-    width: 100%;
-    margin-left: 25.5em;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    -ms-transform: translateX(+50%);
+    transform: translateX(+50%);
     
 }
 #submitForm:hover{
     border: 0.3rem solid rgb(9, 110, 54);
     background: #2ba176;
-    transform: scale(1.2);
+    transform: scale(1.05);
+    -ms-transform: translateX(+50%);
+    transform: translateX(+50%);
 }
 #link{
     display: inline-block;
@@ -66,8 +72,8 @@
         padding: 0;
     }
     #submitForm{
-        width: 420%;
-        margin-left: 3.2em;
+        width: 100%;
+        transform: scale(1);
     }
     #submitForm:hover{
         border: 0.25em solid rgb(21, 187, 95);
@@ -91,8 +97,7 @@
 
 }
 #buttonClick{
-    width: 10%;
+    margin: auto;
+    width: 50%;
     padding: 10px;
-    margin-bottom: 5px;
-    margin-top: 3px;
 }
