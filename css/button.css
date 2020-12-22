@@ -15,6 +15,7 @@
     -ms-user-select:none;       /* Internet Explorer/Edge */
     user-select:none;           /* Non-prefixed version */ 
     width: 100%;
+    margin-left: 25.5em;
     
 }
 #submitForm:hover{
@@ -55,7 +56,7 @@
     width: 50%;
     padding: 10px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     #link{
         width: 100%;
         margin-left: 0;
@@ -66,6 +67,12 @@
     }
     #submitForm{
         width: 420%;
+        margin-left: 3.2em;
+    }
+    #submitForm:hover{
+        border: 0.25em solid rgb(21, 187, 95);
+        background-color: #3CBC8D;
+        transform: scale(1);
     }
     #link:hover{
         border: 0.5em solid rgb(26, 182, 96);
