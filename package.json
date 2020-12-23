@@ -19,6 +19,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "negotiator": "^0.6.2",
     "ytdl-core": "^4.2.0"
   },
   "devDependencies": {
