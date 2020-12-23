@@ -2,23 +2,10 @@ const express = require("express")
 const cors = require("cors")
 const ytdl = require("ytdl-core")
 const app = express()
-
+app.use(express.static("public"))
 app.use(cors())
-app.set("views", __dirname, "/views")
 app.get("/", function(req,res){
     res.sendFile(__dirname+"/index.html")
-})
-app.get('/style.css', function(req, res) {
-  res.sendFile(__dirname + "css/background.css")
-})
-app.get('/style.css', function(req, res) {
-  res.sendFile(__dirname + "css/button.css")
-})
-app.get('/style.css', function(req, res) {
-  res.sendFile(__dirname + "css/text.css")
-})
-app.get('/style.css', function(req, res) {
-  res.sendFile(__dirname + "css/video.css")
 })
 
 app.get("/download", function(req,res){
